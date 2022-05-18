@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Engloba Sistemas - Teste para vaga de Front End</title>
+    <meta charset="utf-8">
+    <link href="estilos/reset.css" rel="stylesheet">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- scripts do gráfico -->
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/grafico.js"></script>
+    <script>
+        google.charts.load('current', {'packages':['corechart'],
+            'language': 'pt'});
+        google.charts.setOnLoadCallback(desenharGraficos);			
+    </script>
+
+    <!-- scripts do carrossel -->
+
+
+</head>
+  <body>
+    
+        <header>
+
+            <div class="header-esquerda">
+
+                <img src="imagens/logo.png" class="logo">
+
+                <nav>
+                    <div class="botao-menu"><img src="imagens/botao-menu.png"></div>
+                    <ul class="menu">
+                        <li>Home</li>
+                        <li>Página 2</li>
+                        <li>Página 3</li>
+                    </ul>
+                </nav>
+
+                <form class="form-pesquisa">
+                    <select name="pesquisa">
+                        <option value="codigo">Código
+                        <option value="nome">Nome
+                        <option value="tipo">Tipo
+                    </select>
+
+                    <input type="search" placeholder="Pesquisar..." class="pesquisa">
+
+                    <span><input type="submit" class="btn-search" value=""></span>
+                </form>
+                    
+                </div>
+            </div>
+
+            <div class="acoes">
+                <ul>
+                    <li><img src="imagens/botoes/botoes-topo/calendario.png"></li>
+                    <li><img src="imagens/botoes/botoes-topo/documento.png"></li>
+                    <li><img src="imagens/botoes/botoes-topo/sino.png"></li>
+                    <li><img src="imagens/botoes/botoes-topo/ajuda.png"></li>
+                    <li class="perfil"><img src="imagens/botoes/botoes-topo/perfil.png"></li>
+                </ul>
+            </div>
+
+            
+
+        </header>
+
+        <main>
+            <div class="botoes">
+
+                <button onclick="addClass()" id="drop-menu" class="drop-list">Botões</button>
+                <ul>
+
+                    <li><a href="#"><img src="imagens/botoes/operacoes.png">Operações</a></li>
+                    <li><a href="#"><img src="imagens/botoes/gestao.png">Gestão</a></li>
+                    <li><a href="#"><img src="imagens/botoes/financeiro.png">Financeiro</a></li>
+                    <li><a href="#"><img src="imagens/botoes/ferramentas.png">Ferramentas</a></li>
+                    <li><a href="#"><img src="imagens/botoes/integracoes.png">Integrações</a></li>
+                    <li><a href="#"><img src="imagens/botoes/configuracoes.png">Configuraões</a></li>
+
+                </ul>
+            </div>
+
+            
+
+            <div class="conteudo">
+                <h1>Emissões</h1>
+                <p>Quantidade de Pedidos: <i>250</i> | Quantidade de volumes: <i>250</i></p>
+        
+                
+                <div class="carrossel">
+                    <div class="slider">
+                        <div id="graficoColuna"></div>
+                        <div id="graficoColuna2"></div>
+                        <div id="graficoColuna3"></div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+
+
+
+
+
+  </body>
+</html>
